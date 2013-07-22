@@ -4,3 +4,11 @@
 <%= link_to "Back", listhowtos_path %>
 <%= link_to "New Step", new_listhowto_step_path(@how) %>
 
+<ul id='steps'>
+<% @how.steps.each do |step| %>
+<li>
+#<%= step.id %> -
+<%= link_to step.content, [@how, @step] %>
+</li>
+<% end %>
+</ul>
