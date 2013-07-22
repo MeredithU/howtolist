@@ -7,8 +7,10 @@
 <ul id='steps'>
 <% @how.steps.each do |step| %>
 <li>
-#<%= step.id %> -
-<%= link_to step.content, [@how, @step] %>
+<p> Step
+  #<%= step.id %> -
+<%= link_to step.content, [@how, step] %>
+</p>
 </li>
 <% end %>
 </ul>

@@ -1,0 +1,9 @@
+<h2>Editing a Step in <%= @how.name %></h2>
+<%= form_for [@how, @step] do |f| %>
+<%= f.error_messages %>
+<p>
+<%= f.label :content %><br>
+<%= f.text_field :content %>
+</p>
+<%= f.submit "Update" %>
+<% end %>
