@@ -1,2 +1,7 @@
 <h1>HowtoLists</h1>
+<ul>
+<% @how.each do |p| %>
+<li><%= link_to p.name, p %></li>
+<% end %>
+</ul>
 <%= link_to "New howtolist" , new_listhowto_path %>
